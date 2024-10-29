@@ -1,0 +1,30 @@
+knn:
+  neighbors: [5, 10, 15, 20]
+  validation_k: [5, 10, 15, 20, 25]
+
+neural_network:
+  input_dim: 16
+  layers:
+    - units: 16
+      activation: relu
+      dropout: 0.5
+    - units: 8
+      activation: relu
+      dropout: 0.5
+  epochs: 50
+  batch_size: 16
+  optimizer: adam
+  learning_rate: 0.001
+  loss: binary_crossentropy
+  metrics: ['accuracy']
+  early_stopping:
+    monitor: val_loss
+    patience: 5
+    restore_best_weights: true
+
+svm:
+  kernel: rbf         # Type of kernel, e.g., rbf, linear, poly
+  C: 1                # Regularization parameter
+  threshold: 0.5      # Decision threshold for classification
+  probability: true   # Whether to enable probability estimates
+  random_state: 42    # Seed for reproducibility
