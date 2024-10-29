@@ -1,0 +1,19 @@
+neural_network:
+  input_dim: 16
+  layers:
+    - units: 16
+      activation: relu
+      dropout: 0.5
+    - units: 8
+      activation: relu
+      dropout: 0.5
+  epochs: 50
+  batch_size: 16
+  optimizer: adam
+  learning_rate: 0.001
+  loss: binary_crossentropy
+  metrics: ['accuracy']
+  early_stopping:
+    monitor: val_loss
+    patience: 5
+    restore_best_weights: true
