@@ -11,7 +11,6 @@ Please see attached report for summary.
     - A `config.yaml` file, which houses the optimal hyperparameters for all three models
     - A `models` folder that contains a nested folder for the model being implemented
    - These preprocessing files are `.py` files necessary to replicate my results.
-- The `.gitignore` file is the standard recommended file; I made no changes and take no credit for its structure.
 - The `requirements.txt` file contains all required libraries to successfully run my code.
 - The `Jupyter notebook` folder houses the code I used to fine-tune the model and assess its effectiveness. This folder is not required to run the code, merely a record of my processes.
 
